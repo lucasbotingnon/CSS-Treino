@@ -5,19 +5,30 @@
 		<meta charset="utf-8">
 		<style type="text/css">
 			.texto{
-					font-size: 18px;
-				}
-				div{
-					font-size: 60px;
-				}
+				font-size: 18px;
+			}
+			.negrito{
+				font-weight: bold; /* 100 até 900*/
+			}
+			.estilo{
+				font-style: italic;
+				/*font-style: oblique;*/
+			}
+			.texto-padrao{
+				font: bold 40px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+			}
+			.formatacao{
+				text-decoration: underline; /*overline | line-through*/
+			}
 		</style>
 	</head>
 	<body>
 		<p class="texto">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi velit, lacinia sed lobortis at, tincidunt dapibus massa. Donec sed diam luctus enim commodo feugiat eget non odio. Cras dolor ipsum, suscipit et ex pulvinar, malesuada vulputate nibh. Cras dui magna, consequat nec pretium.
-			<p>Conteudo 1</p>
+			Lorem ipsum dolor sit amet, <span class="formatacao">consectetur adipiscing</span> elit. Donec nisi velit, lacinia sed lobortis.</p>
+			<p class="negrito">Conteudo 1</p>
 			<p>Conteudo 2</p>
-		</p>
+			<p class="estilo">Conteudo 3</p>
+			<p class="texto-padrao">Conteudo 4</p>
 		
 	</body>
 </html>
